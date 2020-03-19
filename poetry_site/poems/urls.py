@@ -15,10 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from . import views
 from poems import views
+
 
 app_name = 'poems'
 
 urlpatterns = [
-   path('', views.poems_all_, name='poetry'),
+   path('', views.poems_all_, name='poems'),
+   path('<int:id>/', views.poem_single, name='poem_single'),
+
 ]
