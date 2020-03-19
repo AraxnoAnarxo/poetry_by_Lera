@@ -5,14 +5,14 @@
     <title>All poems</title>
 </head>
 <body>
-
+{% for poem in poems.all%}
+{% for str in text%}
     <ul>
-       {% for poem in poems.all %}
         <li>
-            {{poem.poem_title}}, {{poem.poem_text}}
+            {{str}}
         </li>
-        {% endfor %}
     </ul>
-
+{% endfor %}
+{% endfor%}
 </body>
 </html>

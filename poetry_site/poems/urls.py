@@ -20,5 +20,5 @@ from poems import views
 app_name = 'poems'
 
 urlpatterns = [
-   # path('', views.poems_all, name='poetry'),
+   path('', views.poems_all_, name='poetry'),
 ]

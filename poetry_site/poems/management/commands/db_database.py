@@ -3,10 +3,10 @@ from poems.models import Poem
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        poems = Poem.objects.all()
+        #poems = Poem.objects.all()
 
 # Всего:
-        print(len(poems))
+        #print(len(poems))
 
 # Запрос в базу без условия
 #         for p in poems:
@@ -15,8 +15,10 @@ class Command(BaseCommand):
 # Запрос в базу с условием
 # get
 
-    # poem = Poem.objects.get(poem_title = 'Человека')
-    # print(poem.poem_text)
+       poem = Poem.objects.get(poem_title = 'Человека')
+
+
+       print(poem)
 
 # filter
 #     poem = Poem.objects.filter(poem_title = '***')
