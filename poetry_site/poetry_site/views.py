@@ -17,6 +17,7 @@ def poems_all(request):
 
     zipped_list = zip(titles_all, poems_all)
 
+
     return render(request, 'poems/index.html', {'poems':zipped_list})
 
 # def poems_all(request):
