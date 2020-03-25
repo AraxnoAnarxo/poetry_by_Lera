@@ -1,5 +1,3 @@
-
-
 {% extends 'poems/base.html'%}
 
 {% block content %}
@@ -10,9 +8,16 @@
 					<div class="col-md-12 section-heading text-center">
 						<h2 class="to-animate"></h2>
 						<div class="row">
-							<p class="col-md-8 col-md-offset-2 subtext to-animate">
-                                <h1>{{poem.poem_title}}</h1>
-                                 <pre class="class01">{{poem.poem_text}}</pre>
+							<div class="col-md-8 col-md-offset-2 subtext to-animate">
+                                <table border="1px">
+									{% for poem in poems %}
+                                    <tr>
+										<td><a href="{% url 'poems:poem_single' id=poem.id %}">{{poem.poem_title}}</a></td>
+										<td>{{poem.first_line}}</td>
+									</tr>
+									{% endfor %}
+
+                                </table>
 							</div>
 						</div>
 					</div>

@@ -23,13 +23,13 @@ body {
 }
 
 a {
-  color: #8C7676;
+  color: #206f8a;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #8C7676;
+  color: #206f8a;
   outline: none;
 }
 
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 480px) {
   #fh5co-header #navbar li.active a {
-    color: #8C7676;
+    color: #206f8a;
   }
 }
 #fh5co-header .navbar-brand {
@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(140, 118, 118, 0.8);
 }
 #fh5co-header .navbar-brand > span {
-  color: #8C7676;
+  color: #206f8a;
 }
 @media screen and (max-width: 992px) {
   #fh5co-header .navbar-brand {
@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 #fh5co-header.navbar-fixed-top #navbar li a:hover {
-  color: #8C7676;
+  color: #206f8a;
 }
 @media screen and (max-width: 992px) {
   #fh5co-header.navbar-fixed-top #navbar li a {
@@ -210,11 +210,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #fh5co-header.navbar-fixed-top #navbar li.active a {
-  color: #8C7676 !important;
+  color: #206f8a !important;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header.navbar-fixed-top #navbar li.active a {
-    color: #8C7676 !important;
+    color: #206f8a !important;
   }
 }
 #fh5co-header.navbar-fixed-top #navbar li.active a span:before {

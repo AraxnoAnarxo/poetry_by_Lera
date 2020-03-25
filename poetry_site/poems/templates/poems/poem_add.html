@@ -1,0 +1,32 @@
+{% extends 'poems/base.html' %}
+
+
+{% block content %}
+{% load static %}
+<section id="fh5co-home" data-section="home" style="background-image: url('{% static "poems/spiral.png" %}');" data-stellar-background-ratio="0.5">
+
+	<br>
+	<br>
+
+	<div class="col-md-12 text-center">
+		<form method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+<!--			{{form}}-->
+			{% for field in form %}
+			<p>{{field.label_tag}}</p>
+			<p>{{field}}</p>
+
+			{% endfor %}
+			<br>
+			<button class="btn btn-send-message btn-md" type="submit">Добавить стихотворение</button>
+
+		</form>
+	</div>
+<section
+
+{% endblock %}
+
+
+
+
+

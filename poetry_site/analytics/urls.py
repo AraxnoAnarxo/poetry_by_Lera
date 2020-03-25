@@ -16,15 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from . import views
-from poems import views
+from analytics import views
 
 
-app_name = 'poems'
+app_name = 'analytics'
 
 urlpatterns = [
-   path('', views.Poems_All_ListView.as_view(), name='poems_all'),
-   path('contents/', views.PoemListView.as_view(), name='contents'),
-   path('<int:id>/', views.poem_single, name='poem_single'),
-   path('add/', views.poem_add, name='poem_add'),
+   path('', views.form_analytics, name='PA'),
+   path('all_words_counter/', views.all_words_counted, name='word_counter'),
 
 ]

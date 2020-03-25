@@ -1,0 +1,35 @@
+
+
+{% extends 'poems/base.html' %}
+{% block content %}
+{% load static %}
+<section id="fh5co-home" data-section="home" style="background-image: url('{% static "poems/spiral.png" %}');" data-stellar-background-ratio="0.5">
+	<div class="gradient"></div>
+	<div class="container">
+		<div class="text-wrap">
+			<div class="text-inner">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<h1 class="to-animate">Поэтический Аналитик</h1>
+						<h2 class="to-animate"><a href="{% url 'analytics:word_counter' %}" target="_blank">Запустить</a> <br></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
