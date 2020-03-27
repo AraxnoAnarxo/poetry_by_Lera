@@ -24,5 +24,7 @@ app_name = 'analytics'
 urlpatterns = [
    path('', views.form_analytics, name='PA'),
    path('all_words_counter/', views.all_words_counted, name='word_counter'),
+   path('phrase_generator/', views.view_generator, name='phrase_generator'),
+   path('phrase/', views.phrase_generator, name='phrase'),
 
 ]
